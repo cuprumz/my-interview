@@ -11,4 +11,6 @@ import java.util.List;
 public interface HeroMapper {
     
     List<Hero> findAll();
+
+    Hero selectHero(int number);
 }

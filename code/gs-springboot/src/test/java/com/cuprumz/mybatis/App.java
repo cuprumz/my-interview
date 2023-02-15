@@ -1,6 +1,7 @@
 package com.cuprumz.mybatis;
 
 import com.cuprumz.dao.HeroMapper;
+import com.cuprumz.pojo.Hero;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -26,8 +27,10 @@ public class App {
 
         HeroMapper mapper = session.getMapper(HeroMapper.class);
         
-        mapper.findAll().forEach((hero -> {
-            System.out.println(hero);
-        }));
+        mapper.findAll().forEach((System.out::println));
+
+
+        Hero hero = session.selectOne("com.cuprumz.dao.HeroMapper.selectHero", 21);
+        System.out.println(hero);
     }
 }

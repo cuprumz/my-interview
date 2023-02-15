@@ -6,4 +6,8 @@
     <select id="findAll" resultType="com.cuprumz.pojo.Hero">
         select * from hero
     </select>
+
+    <select id="selectHero" resultType="com.cuprumz.pojo.Hero">
+        select * from hero where number = #{number}
+    </select>
 </mapper>
