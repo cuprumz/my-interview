@@ -4,7 +4,7 @@ public class Hero {
     
     private Integer number;
     private String name;
-    private String county;
+    private String country;
 
     public Integer getNumber() {
         return number;
@@ -22,11 +22,20 @@ public class Hero {
         this.name = name;
     }
 
-    public String getCounty() {
-        return county;
+    public String getCountry() {
+        return country;
     }
 
-    public void setCounty(String county) {
-        this.county = county;
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "number=" + number +
+                ", name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 }
