@@ -25,6 +25,11 @@ dependencies {
 	runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// 1. Use Guava in your implementation only:
+	implementation("com.google.guava:guava:31.1-jre")
+	// 2. Use Guava types in your public API:
+// 	api("com.google.guava:guava:31.1-jre")
 }
 
 tasks.named('test') {
