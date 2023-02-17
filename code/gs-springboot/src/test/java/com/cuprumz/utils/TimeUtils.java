@@ -13,4 +13,12 @@ public class TimeUtils {
                         .withZone(ZoneId.systemDefault())
                         .format(Instant.now()));
     }
+
+    void printNow(int i) {
+        // NOP
+    }
+
+    private void printNow(int i, int j) {
+        // NOP
+    }
 }
