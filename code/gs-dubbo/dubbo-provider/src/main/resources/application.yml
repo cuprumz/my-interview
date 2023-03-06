@@ -1,0 +1,15 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: dubbo-provider
+dubbo:
+  application:
+    name: dubbo-provider
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  provider:
+    timeout: 1000

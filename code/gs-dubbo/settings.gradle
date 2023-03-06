@@ -1,0 +1,6 @@
+rootProject.name = 'gs-dubbo'
+include 'dubbo-api'
+include 'dubbo-provider'
+include 'dubbo-comsumer'
+include 'utils'
+
